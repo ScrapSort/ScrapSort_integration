@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Queue.cpp
+Queue.h
+/Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Queue.h
+
+/Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Queue.h
+iostream
+-
+
