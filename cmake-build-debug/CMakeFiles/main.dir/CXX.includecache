@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Queue.cpp
+Queue.h
+/Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Queue.h
+
 /Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Queue.h
 iostream
 -
+utils.h
+/Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/utils.h
 
 /Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Sorter.cpp
 Sorter.h
@@ -17,6 +23,8 @@ Sorter.h
 /Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Sorter.h
 Queue.h
 /Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Queue.h
+utils.h
+/Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/utils.h
 
 /Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/main.cpp
 iostream
@@ -25,4 +33,6 @@ Queue.h
 /Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Queue.h
 Sorter.h
 /Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/Sorter.h
+
+/Users/Tyler/Documents/Projects/UCSB/capstone/ScrapSort_integration/utils.h
 

@@ -5,6 +5,7 @@
 #define NUM_TYPES 6
 
 #include "Queue.h"
+#include "utils.h"
 
 class Sorter {
 public:

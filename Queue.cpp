@@ -1,6 +1,8 @@
 #include "Queue.h"
 
 void Queue::push(bool push_into_bucket) {
+  D(std::cout << "push(" << push_into_bucket << ")" << std::endl);
+
   num_nodes++;
 
   if (!front) {
@@ -12,8 +14,10 @@ void Queue::push(bool push_into_bucket) {
 }
 
 bool Queue::pop() {
+  D(std::cout << "pop()" << std::endl);
+
   if (!num_nodes) {
-    std::cout << "ERROR: Queue is empty" << std::endl;
+    D(std::cout << "ERROR: Queue is empty" << std::endl);
     return false;
   }
 
@@ -32,6 +36,14 @@ bool Queue::pop() {
   return val;
 }
 
-int Queue::size() { return num_nodes; }
+int Queue::size() {
+  D(std::cout << "size()" << std::endl);
 
-bool Queue::empty() { return !num_nodes; }
+  return num_nodes;
+}
+
+bool Queue::empty() {
+  D(std::cout << "empty()" << std::endl);
+
+  return !num_nodes;
+}

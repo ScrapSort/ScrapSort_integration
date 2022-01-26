@@ -3,12 +3,15 @@
 
 CMakeFiles/main.dir/Queue.cpp.o: ../Queue.cpp
 CMakeFiles/main.dir/Queue.cpp.o: ../Queue.h
+CMakeFiles/main.dir/Queue.cpp.o: ../utils.h
 
 CMakeFiles/main.dir/Sorter.cpp.o: ../Queue.h
 CMakeFiles/main.dir/Sorter.cpp.o: ../Sorter.cpp
 CMakeFiles/main.dir/Sorter.cpp.o: ../Sorter.h
+CMakeFiles/main.dir/Sorter.cpp.o: ../utils.h
 
 CMakeFiles/main.dir/main.cpp.o: ../Queue.h
 CMakeFiles/main.dir/main.cpp.o: ../Sorter.h
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
+CMakeFiles/main.dir/main.cpp.o: ../utils.h
 
