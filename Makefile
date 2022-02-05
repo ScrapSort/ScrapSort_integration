@@ -1,5 +1,7 @@
 CC=clang
-CFLAGS= -Wall -Wextra -Wpedantic
+CFLAGS= -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wunreachable-code
+
+# Source / build directories and executable
 
 SRC=src
 DST=build
@@ -11,11 +13,13 @@ HDRS := $(wildcard ${SRC}/*.h)
 OBJS := $(patsubst ${SRC}/%.c, ${DST}/%.o, $(SRCS))
 
 # Link
+
 $(TARGET): $(OBJS) $(HDRS)
 	@mkdir -p ${DST}
 	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
 
 # Compile
+
 ${DST}/%.o: ${SRC}/%.c $(HDRS)
 	@mkdir -p ${DST}
 	$(CC) $(CFLAGS) -c $< -o $@
