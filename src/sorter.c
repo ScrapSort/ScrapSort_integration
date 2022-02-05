@@ -1,4 +1,5 @@
 #include "sorter.h"
+#include "queue.h"
 
 void sorter__add_item(sorter *s, int item_type) {
   for (int i = 0; i < item_type; i++) {
@@ -14,6 +15,10 @@ bool sorter__detected_item(sorter *s, int flipper) {
 
 sorter Sorter() {
   sorter s;
+
+  for (int i = 0; i < NUM_TYPES; i++) {
+    s.queues[i] = Queue();
+  }
 
   return s;
 }

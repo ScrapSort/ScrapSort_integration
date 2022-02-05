@@ -1,19 +1,23 @@
 CC=clang
-TARGET=build/main
+CFLAGS= -Wall -Wextra -Wpedantic
+
+SRC=src
+DST=build
+TARGET=${DST}/main
 
 # Get all source and header files, substitute '.o' for object files
-SRCS := $(wildcard src/*.c)
-HDRS := $(wildcard src/*.h)
-OBJS := $(patsubst src/%.c, build/%.o, $(SRCS))
+SRCS := $(wildcard ${SRC}/*.c)
+HDRS := $(wildcard ${SRC}/*.h)
+OBJS := $(patsubst ${SRC}/%.c, ${DST}/%.o, $(SRCS))
 
 # Link
 $(TARGET): $(OBJS) $(HDRS)
-	@mkdir -p build
+	@mkdir -p ${DST}
 	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
 
 # Compile
-build/%.o: src/%.c $(HDRS)
-	@mkdir -p build
+${DST}/%.o: ${SRC}/%.c $(HDRS)
+	@mkdir -p ${DST}
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
