@@ -3,6 +3,8 @@
 #include "queue.h"
 #include "sorter.h"
 
+#define NUM_TYPES 6
+
 int main() {
 
   // TEST QUEUE
@@ -21,7 +23,7 @@ int main() {
 
   // TEST SORTER
 
-  struct sorter s = Sorter();
+  struct sorter s = Sorter(NUM_TYPES);
 
   sorter__add_item(&s, 2);
   sorter__add_item(&s, 1);
