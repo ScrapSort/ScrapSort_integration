@@ -17,7 +17,7 @@ sorter Sorter(int num_types) {
   sorter s;
 
   s.num_types = num_types;
-  s.queues = malloc(sizeof(queue) * (unsigned int) num_types);
+  s.queues = malloc(sizeof(queue) * (unsigned int)(num_types - 1));
 
   for (int i = 0; i < num_types; i++) {
     s.queues[i] = Queue();
