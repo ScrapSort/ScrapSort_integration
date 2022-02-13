@@ -19,8 +19,8 @@ stats Stats(int num_types) {
   stats s;
 
   s.num_types = num_types;
-  s.num_items_active = malloc(sizeof(int) * (unsigned int)(num_types - 1));
-  s.num_items_binned = malloc(sizeof(int) * (unsigned int)(num_types - 1));
+  s.num_items_active = malloc(sizeof(int) * (unsigned int)(num_types));
+  s.num_items_binned = malloc(sizeof(int) * (unsigned int)(num_types));
 
   for (int i = 0; i < num_types; i++) {
     s.num_items_active[i] = 0;
